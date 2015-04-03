@@ -12,7 +12,7 @@ def recursive_sort(unsorted_array, sorted_array)
     min = 1
     i = 0
     while i < unsorted_array.length
-      min = 0 if unsorted_array[b].to_s > unsorted_array[i].to_s
+      min = 0 if unsorted_array[b].to_s.downcase > unsorted_array[i].to_s.downcase
       i+=1
     end
     if min == 1
